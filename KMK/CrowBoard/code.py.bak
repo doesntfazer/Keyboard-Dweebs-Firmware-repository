@@ -73,13 +73,13 @@ keyboard.keymap = [
      [ #ADJUST
      KC.F1,  KC.F2,  KC.F3,     KC.F4,    KC.F5,     KC.F6,    KC.F7,     KC.F8,    KC.F9,   KC.F10, 
      KC.F11,  KC.F12,  KC.TRNS,     KC.TRNS,    KC.TRNS,     KC.TRNS,    KC.TRNS,     CAE,    CAD,   CAD, 
-     KC.Z,  KC.X,  KC.C,     KC.V,    KC.B,     KC.N,    KC.M,     KC.COMM, KC.DOT, KC.SLSH,
-     KC.NO, KC.NO, KC.Q,     KC.W,    KC.SPACE, KC.BSPC, KC.T,     KC.Y,    KC.NO,  KC.NO,
+     KC.TRNS,  KC.TRNS,  KC.TRNS,     KC.TRNS,    KC.TRNS,     KC.TRNS,    KC.TRNS,     KC.TRNS, KC.TRNS, KC.TRNS,
+     KC.NO, KC.NO, KC.TRNS,     KC.TRNS,    KC.TRNS, KC.ENTER, KC.TRNS,     KC.TRNS,    KC.NO,  KC.NO,
      
      ]
      
 ]
-# Uncomment for Trackball
+# Uncomment for Encoders
 #from kmk.modules.pimoroni_trackball import Trackball, TrackballMode
 #import busio as io
 

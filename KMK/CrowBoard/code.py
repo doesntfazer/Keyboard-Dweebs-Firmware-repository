@@ -79,7 +79,7 @@ keyboard.keymap = [
      ]
      
 ]
-# Uncomment for Encoders
+# Uncomment for Trackball
 #from kmk.modules.pimoroni_trackball import Trackball, TrackballMode
 #import busio as io
 
@@ -92,7 +92,7 @@ keyboard.keymap = [
 #trackball.set_blue(100)
 #trackball.set_white(40)
 
-#uncomment for trackball
+#uncomment for Encoders
 #from kmk.modules.encoder import EncoderHandler
 #encoder_handler = EncoderHandler()
 #keyboard.modules = [encoder_handler]

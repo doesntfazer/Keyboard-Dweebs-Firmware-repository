@@ -7,7 +7,7 @@ The Ostrich is a 34 key keyboard with splayed pinky columns. the rp2040 Pico MCU
 revision 0.9 uses an MCP23017 to avoid having to solder diodes.
 
 
-Add this folder to the "keyboards" folder of qmk.
+Add the "ostrich" folder to the "keyboards" folder of qmk.
 
 See [qmk's firmware setup guide](https://docs.qmk.fm/#/newbs_getting_started) for more information on how to set up qmk.
 

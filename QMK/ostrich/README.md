@@ -2,7 +2,7 @@
 
 ![Ostrich](https://i.imgur.com/kaxrSqM.jpg)
 
-The Ostrich is a 34 key keyboard with splayed pinky columns. the rp2040 Pico MCU is canted like the Reviung34. It has the option for a single OLED in the middle of the keyboard, and supports EC12 encoders. (Low profile is recommended.) 
+The Ostrich is a 34 key keyboard with splayed pinky columns. the rp2040 Pico MCU is canted like the Reviung34. It has the option for a single OLED in the middle of the keyboard, and supports EC12 encoders. (Low profile is recommended.) This was designed to be caseless, but you are always welcome to make a case for it.
 
 revision 0.9 uses an MCP23017 to avoid having to solder diodes.
 

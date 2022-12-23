@@ -18,8 +18,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 #include "config_common.h"
-#define VENDOR_ID 0xFEEQ
-#define PRODUCT_ID 0x1K1D
+#define VENDOR_ID 0xFEED
+#define PRODUCT_ID 0x1B1E
 #define DEVICE_VER 0x0001
 #define MANUFACTURER mangoiv
 #define PRODUCT draculad
@@ -47,8 +47,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENCODERS_PAD_A {B6 , B4}
 #define ENCODERS_PAD_B {B2 , B5}
 
-#define ENCODER_RESOLUTIONS { 4, 4, 4, 1}
-#define UNUSED_PINS
 
 #define EE_HANDS
 

@@ -103,7 +103,7 @@ static bool read_cols_on_row(matrix_row_t current_matrix[], uint8_t row_index) {
     // Store last value of row prior to reading
     matrix_row_t last_row_value    = current_matrix[row_index];
     matrix_row_t current_row_value = last_row_value;
-    matrix_row_t row_shifter = MATRIX_ROW_SHIFTER;
+    matrix_row_t row_shifter = MATRIX_ROW_SHIFTER << 1;
 
     // For each col...
     for (uint8_t col_index = 0; col_index < MATRIX_COLS; col_index++, row_shifter <<= 1) {
@@ -180,14 +180,14 @@ void matrix_init_custom(void) {
 bool matrix_scan_custom(matrix_row_t current_matrix[]) {
     bool matrix_has_changed = false;
 
+    // Set col, read rows
+    matrix_row_t row_shifter = MATRIX_ROW_SHIFTER;
+    for (uint8_t col_index = 0; col_index < MATRIX_COLS; col_index++, row_shifter <<= 1) {
+        matrix_has_changed |= read_rows_on_col(current_matrix, col_index, row_shifter);
+    }
     // Set row, read cols
     for (uint8_t row_index = 0; row_index < MATRIX_ROWS; row_index++) {
         matrix_has_changed |= read_cols_on_row(current_matrix, row_index);
-    }
-    // Set col, read rows
-    matrix_row_t row_shifter = MATRIX_ROW_SHIFTER << 1;
-    for (uint8_t col_index = 0; col_index < MATRIX_COLS; col_index++, row_shifter <<= 1) {
-        matrix_has_changed |= read_rows_on_col(current_matrix, col_index, row_shifter);
     }
 
     return matrix_has_changed;

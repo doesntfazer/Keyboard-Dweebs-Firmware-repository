@@ -1,0 +1,1 @@
+I've uploaded the keyboard folder from vial-qmk in case you would like to compile it yourself. Otherwise just put your board in bootloader mode by holding down the bootloader button on the MCU while plugging it in. Then just drag and drop the frigate_vial.uf2 into the folder.

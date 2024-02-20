@@ -1,6 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "custom_keycodes.h"
 #include "taipo.c"
+#include "budgy.h"
 
 enum layers {
   _TAIPO,
